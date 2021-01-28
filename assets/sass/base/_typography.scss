@@ -1,91 +1,87 @@
 /*=== Import Fonts ===*/
 @include font-face($font-primary-light, $font-primary-light-path);
 @include font-face($font-primary-regular, $font-primary-regular-path);
-@include font-face($font-primary-medium, $font-primary-medium-path);
-@include font-face($font-primary-semibold, $font-primary-semibold-path);
-@include font-face($font-primary-bold, $font-primary-bold-path);
-
-@include font-face($font-secondary-light, $font-secondary-light-path);
-@include font-face($font-secondary-regular, $font-secondary-regular-path);
-@include font-face($font-secondary-medium, $font-secondary-medium-path);
-@include font-face($font-secondary-semibold, $font-secondary-semibold-path);
-@include font-face($font-secondary-bold, $font-secondary-bold-path);
 
 /*=== Typography Styling ===*/
 body {
-	// color: $dark-1;
-	// font-size: $size-small;
-	// font-family: $font-primary-regular, sans-serif;
-	font-style: normal;
+	color: $color-black;
+	font-size: $font-size-re;
+	font-family: $font-primary-regular;
 	font-weight: normal;
 	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
 	letter-spacing: normal;
-	// line-height: 1.5;
 }
 
 h1 {
-	// @include font-source-sans($font-primary-bold, $font-size-xl, $color-primary-1, bold, line-height);
+	line-height: 1.71;
+	font-size: $font-size-xxl;
 }
 h2 {
-	// @include font-source-sans($font-primary-bold, $font-size-xl, $color-primary-1, bold, line-height);
+	line-height: 1.31;
+	font-size: $font-size-xl;
 }
 h3 {
-	// @include font-source-sans($font-primary-bold, $font-size-xl, $color-primary-1, bold, line-height);
+	line-height: 1.71;
+	font-size: $font-size-lg;
+	&.light {
+		font-family: $font-primary-light;
+	}
 }
 h4 {
-	// @include font-source-sans($font-primary-bold, $font-size-xl, $color-primary-1, bold, line-height);
+	line-height: 1.29;
+	font-size: $font-size-md;
 }
 h5 {
-	// @include font-source-sans($font-primary-bold, $font-size-xl, $color-primary-1, bold, line-height);
+	font-size: $font-size-re;
 }
 h6 {
-	// @include font-source-sans($font-primary-bold, $font-size-xl, $color-primary-1, bold, line-height);
+	font-size: $font-size-sm;
 }
 
-button {
-	// @include font-source-sans($font-primary-bold, $font-size-xl, $color-primary-1, bold, line-height);
-}
-
+button,
 a {
-	// @include font-source-sans($font-primary-bold, $font-size-xl, $color-primary-1, bold, line-height);
+	font-size: $font-size-xs;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: $color-white;
+	text-decoration: none;
 }
 
 p {
-	// @include font-source-sans($font-primary-bold, $font-size-xl, $color-primary-1, bold, line-height);
-}
-
-label {
-	// @include font-source-sans($font-primary-bold, $font-size-xl, $color-primary-1, bold, line-height);
+	line-height: 1.38;
+	&.small {
+		font-size: $font-size-sm;
+		line-height: 1.29;
+	}
 }
 
 // How typogrraphy should looks like on mobile version
 @include for-size(phone-only) {
 	h1 {
-		// font-size: ;
-		// line-height: ;
+		line-height: 1.71;
+		font-size: $font-size-xl;
 	}
 	h2 {
-		// font-size: ;
-		// line-height: ;
+		line-height: 1.31;
+		font-size: $font-size-lg;
 	}
 	h3 {
-		// font-size: ;
-		// line-height: ;
+		line-height: 1.71;
+		font-size: $font-size-md;
+		&.light {
+			font-family: $font-primary-light;
+		}
 	}
 	h4 {
-		// font-size: ;
-		// line-height: ;
+		line-height: 1.29;
+		font-size: $font-size-re;
 	}
 	h5 {
-		// font-size: ;
-		// line-height: ;
+		font-size: $font-size-sm;
 	}
 	h6 {
-		// font-size: ;
-		// line-height: ;
-	}
-	p {
-		// font-size: ;
-		// line-height: ;
+		font-size: $font-size-xs;
 	}
 }

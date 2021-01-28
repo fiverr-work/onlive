@@ -1,0 +1,127 @@
+* { margin: 0px; padding: 0px; -webkit-box-sizing: border-box; box-sizing: border-box; border: 0; vertical-align: baseline; }
+
+/** 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using `em` units. 2. Prevent iOS text size adjust after orientation change, without disabling user zoom. */
+html { font-size: 100%; /* 1 */ -webkit-text-size-adjust: 100%; /* 2 */ -ms-text-size-adjust: 100%; /* 2 */ }
+
+body { overflow-x: hidden; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+h1, h2, h3, h4, h5, h6 { display: block; font-weight: 700; }
+
+i { vertical-align: middle; }
+
+a, a:visited { cursor: pointer; -webkit-transition: color 300ms ease-in-out; transition: color 300ms ease-in-out; }
+
+a:focus, a:visited:focus { outline: thin dotted; }
+
+a:active, a:hover, a:visited:active, a:visited:hover { outline: 0; text-decoration: none; -webkit-transition: color 300ms ease-in-out; transition: color 300ms ease-in-out; }
+
+svg path { -webkit-transition: stroke 300ms ease-in-out, fill 300ms ease-in-out; transition: stroke 300ms ease-in-out, fill 300ms ease-in-out; }
+
+svg:hover path { -webkit-transition: stroke 300ms ease-in-out, fill 300ms ease-in-out; transition: stroke 300ms ease-in-out, fill 300ms ease-in-out; }
+
+input, textarea:focus { outline: 0; }
+
+button:focus { cursor: pointer; outline: 0; }
+
+ol, ul { list-style: none; }
+
+li { list-style: none; }
+
+/** Remove most spacing between table cells. */
+table { border-collapse: collapse; border-spacing: 0; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ""; content: none; }
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-results-button, input[type="search"]::-webkit-search-results-decoration { -webkit-appearance: none; -moz-appearance: none; }
+
+input[type="search"] { -webkit-appearance: none; -moz-appearance: none; -webkit-box-sizing: content-box; box-sizing: content-box; }
+
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+
+/** 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3. 2. Improve image quality when scaled in IE 7. */
+img { border: 0; /* 1 */ -ms-interpolation-mode: bicubic; /* 2 */ }
+
+/** 1. Correct font size not being inherited in all browsers. 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5, and Chrome. 3. Improve appearance and consistency in all browsers. */
+button, input, select, textarea { font-size: 100%; /* 1 */ margin: 0; /* 2 */ vertical-align: baseline; /* 3 */ *vertical-align: middle; /* 3 */ }
+
+/** Address Firefox 3+ setting `line-height` on `input` using `!important` in the UA stylesheet. */
+button, input { line-height: normal; }
+
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+/** 1. Remove default vertical scrollbar in IE 6/7/8/9. 2. Improve readability and alignment in all browsers. */
+textarea { overflow: auto; /* 1 */ vertical-align: top; /* 2 */ }
+
+/*=== Import Fonts ===*/
+@font-face { font-family: "NeueMontreal Light"; src: url("../fonts/NeueMontreal/NeueMontreal-Light.ttf") format("truetype"); }
+
+@font-face { font-family: "NeueMontreal Regular"; src: url("../fonts/NeueMontreal/NeueMontreal-Regular.ttf") format("truetype"); }
+
+/*=== Typography Styling ===*/
+body { color: #000000; font-size: 16px; font-family: "NeueMontreal Regular"; font-weight: normal; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: normal; }
+
+h1 { line-height: 1.71; font-size: 45px; }
+
+h2 { line-height: 1.31; font-size: 35px; }
+
+h3 { line-height: 1.71; font-size: 28px; }
+
+h3.light { font-family: "NeueMontreal Light"; }
+
+h4 { line-height: 1.29; font-size: 26px; }
+
+h5 { font-size: 16px; }
+
+h6 { font-size: 14px; }
+
+button, a { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #ffffff; text-decoration: none; }
+
+p { line-height: 1.38; }
+
+p.small { font-size: 14px; line-height: 1.29; }
+
+@media (max-width: 576px) { h1 { line-height: 1.71; font-size: 35px; }
+  h2 { line-height: 1.31; font-size: 28px; }
+  h3 { line-height: 1.71; font-size: 26px; }
+  h3.light { font-family: "NeueMontreal Light"; }
+  h4 { line-height: 1.29; font-size: 16px; }
+  h5 { font-size: 14px; }
+  h6 { font-size: 12px; } }
+
+.button { padding: 14px 10px 14px 11px; border-radius: 5px; background-color: #000000; min-width: 168px; display: inline-block; text-align: center; }
+
+.lobby-page { background-color: #000000; color: #ffffff; padding-top: 17px; }
+
+.lobby-page .navbar { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; margin-bottom: 140px; }
+
+.lobby-page .navbar a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.lobby-page .navbar a:first-child { margin-right: 15px; }
+
+.lobby-page .navbar a img { margin-left: 5px; }
+
+.lobby-page header h1 { margin-bottom: 23px; }
+
+.lobby-page header p { max-width: 338px; margin-bottom: 100px; }
+
+.lobby-page main { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.lobby-page main .step-card { color: #000000; background-color: rgba(255, 255, 255, 0.2); padding: 55px 49px 49px 33px; border-radius: 10px; }
+
+.lobby-page main .step-card.active { -webkit-box-shadow: 0 0 60px 20px rgba(255, 255, 255, 0.2); box-shadow: 0 0 60px 20px rgba(255, 255, 255, 0.2); background-color: #ffffff; }
+
+.lobby-page main .step-card:not(:last-child) { margin-right: 18px; }
+
+.lobby-page main .step-card img { margin-bottom: 14px; }
+
+.lobby-page main .step-card h3 { line-height: 48px; }
+
+.lobby-page main .step-card p { padding-bottom: 46px; border-bottom: 1px solid #666666; max-width: 244px; }
+
+.lobby-page main .step-card a { margin-top: 20px; }
+/*# sourceMappingURL=style.css.map */
